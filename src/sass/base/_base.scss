@@ -1,0 +1,26 @@
+// Basic Reset
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+}
+
+// Global Styles
+
+body {
+	background: var(--color-dark);
+	color: var(--color-primary);
+	&.light {
+		--color-primary: var(--color-pink);
+		background: var(--color-light);
+		color: var(--color-primary);
+	}
+	&.dark {
+		--color-primary: var(--color-green);
+		background: var(--color-dark);
+		color: var(--color-white);
+	}
+}
